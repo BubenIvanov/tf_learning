@@ -4,6 +4,8 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "tf_course" {
-  bucket = "tf_course_19941995"
-  ac1    = "private"
+  bucket = "tf-course-19941995"
+  acl    = "private"
 }
+
+resource "aws_default_vpc" "default" {}
